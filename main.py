@@ -1,18 +1,3 @@
-def display_greeting():
-    print("Welcome to RPSLS or Rock, Paper, Scissors, Lizard, Spock")
-    print("")
-    print("Each match will be a best of three games.")
-    print("Use the number keys to enter your selection.")
-    print("")
-    print("Scissors cut Paper")
-    print("Paper covers Rock")
-    print("Rock crushes Lizard")
-    print("Lizard poisons Spock")
-    print("Spock smashes Scissors")
-    print("Scissors decpitates Lizard")
-    print("Lizard eats Paper")
-    print("Paper disproves Spock")
-    print("Spock vaporizes Rock")
-    print("Rock crushes Scissors")
+
 
 display_greeting()
