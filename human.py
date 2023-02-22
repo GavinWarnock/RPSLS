@@ -4,6 +4,7 @@ class Human(Player):
     def __init__(self):
         self.player_one = 'Player one'
         self.player_two = 'Player two'
+        self.chosen_guesture = ''
         super().__init__()
 
     def select_gesture(self):
@@ -15,6 +16,7 @@ class Human(Player):
         print("")
         
         chosen_gesture = input("Choose your gesture.  ")
+        
 
         for gesture in self.gesture:
             if gesture == self.gesture[0]:
@@ -32,6 +34,6 @@ class Human(Player):
             elif gesture == (self.gesture[4]):
                 print(f'{self.player_one} chooses Spock')
 
-        
-       # self.point += 1
-    select_gesture()
+        return chosen_gesture
+       
+    
