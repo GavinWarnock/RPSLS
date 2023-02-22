@@ -3,8 +3,8 @@ from AI import AI
 
 class Game:
     def __init__(self):
-        self.human = Human()
-        self.AI = AI()
+        self.player_one = Human()
+        self.player_two = AI()
 
     def display_greeting(self):
         print("Welcome to RPSLS or Rock, Paper, Scissors, Lizard, Spock")
@@ -29,22 +29,21 @@ class Game:
             print("")
             print("1 player selected!")
             p1_points = 0
-            ai_points = 0
-            while p1_points != 0 or ai_points != 0:
-                print("Player one please choose your gesture!")
-                Human.select_gesture()
-                AI.select_gesture()
-                print(f"The ai chooses {ai_gesture}")
-        elif amount_of_players == "2":
-            print("")
-            print("2 players selected!")
-            p1_points = 0
             p2_points = 0
-            while p1_points !=2 or p2_points != 2:
+            while p1_points != 2 or p2_points != 2:
                 print("Player one please choose your gesture!")
-                Human.select_gesture(1)
+                p1_choice = self.player_one.select_gesture()
+                p2_choice = self.player_two.ai_select_gesture()
+                if p1_choice == "Rock":
+                    if p2_choice == "Paper" or p2_choice == "Spock":
+                        print("Player 2 has won the round!")
+                        p2_points += 1
+                    elif p2_choice == "Lizard" or p2_choice == "Scissors":
+                        p1_points += 1
+                        print("Player 1 has won the round!")
+                    elif p2_choice == "Rock":
+                        print("It's a tie!")
                 
-
         else:
             "Please select 1 or 2"
     

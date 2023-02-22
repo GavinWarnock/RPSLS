@@ -1,5 +1,6 @@
 
 from Game import Game
 
-Game.game_rounds(0)
+my_game = Game()
+my_game.game_rounds()
 
