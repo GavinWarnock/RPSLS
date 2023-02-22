@@ -1,4 +1,6 @@
 from human import Human
+from Game import Game
 
-Human.select_gesture()
+Game.game_rounds(0)
+
 
