@@ -22,26 +22,32 @@ class Game:
         print("Paper disproves Spock")
         print("Spock vaporizes Rock")
         print("Rock crushes Scissors")
-
-def select_players(self):
-    print("")
+  
+def game_rounds(self):
     amount_of_players = input("How many players? 1 or 2  ")
     if amount_of_players == "1":
         print("")
         print("1 player selected!")
-        print("Player 1")
-        Human.select_gesture(self)
+        p1_points = 0
+        ai_points = 0
+        while p1_points != 0 or ai_points != 0:
+            print("Player one please choose your gesture!")
+            Human.select_gesture()
+            AI.select_gesture()
+            print(f"The ai chooses {ai_gesture}")
     elif amount_of_players == "2":
         print("")
         print("2 players selected!")
-        print("Player 1")
-        Human.select_gesture(self)
-        print("")
-        print("Player 2")
+        p1_points = 0
+        p2_points = 0
+        while p1_points !=2 or p2_points != 2:
+            
+
     else:
         "Please select 1 or 2"
+   
+        
+ 
 
-def game():
-    
 
-select_players()
+
