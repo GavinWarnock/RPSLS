@@ -27,13 +27,9 @@ def select_players(self):
     if amount_of_players == "1":
         print("")
         print("1 player selected!")
-        print("Player 1")
-        select_gesture(self)
     elif amount_of_players == "2":
         print("")
         print("2 players selected!")
-        print("Player 1")
-        select_gesture(self)
     else:
         "Please select 1 or 2"
 
@@ -45,5 +41,8 @@ def select_gesture(self):
     print("Choose 4 for Spock")
     print("")
     chosen_gesture = input("Choose your gesture.  ")
+    return chosen_gesture
 
-select_players()
+
+def run_game(self):
+    pass
