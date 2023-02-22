@@ -1,8 +1,8 @@
 from player import Player
 
 class Human(Player):
-    def __init__(self):
-        self.player = 'Player'
+    def __init__(self, name):
+        self.player = name
         super().__init__()
 
     def select_gesture(self):
@@ -14,9 +14,11 @@ class Human(Player):
         print("")
         
         
+        
+   
         valid_input = False
-
         while valid_input == False:
+        
             chosen_gesture = int(input("Choose your gesture.  "))
             if chosen_gesture == 0:
                 print(f"{self.player} has chosen Rock")
