@@ -7,6 +7,7 @@ class AI(Player):
 
     def select_gesture(self):
         ai_gesture = random.choice(self.gesture)
-        print ('AI chooses ', ai_gesture)
+        print ('AI chooses ', random.choice(self.gesture))
         self.point += 1
-        return  ai_gesture
+        return ai_gesture
+    
