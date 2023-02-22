@@ -2,7 +2,7 @@
 from human import Human
 
 player_one = Human()
-player_one.chosen_guesture = ('Choose your gesture')
+player_one.select_guesture ()
 
 def select_gesture(self):
         print("Choose 0 for Rock")

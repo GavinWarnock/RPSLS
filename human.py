@@ -4,7 +4,7 @@ class Human(Player):
     def __init__(self):
         self.player_one = 'Player one'
         self.player_two = 'Player two'
-        self.chosen_guesture = ''
+        
         super().__init__()
 
     def select_gesture(self):
