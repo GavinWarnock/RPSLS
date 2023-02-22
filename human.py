@@ -18,7 +18,7 @@ class Human(Player):
    
         valid_input = False
         while valid_input == False:
-        
+    
             chosen_gesture = int(input("Choose your gesture.  "))
             if chosen_gesture == 0:
                 print(f"{self.player} has chosen Rock")
@@ -36,6 +36,24 @@ class Human(Player):
                 print(f"{self.player} has chosen Spock")
                 return "Spock"
             else:
-                print("Please select a valid gesture")
-           
-       # self.point += 1
+                print("Please select a valid gesture")       
+        # gesture = int(input("Choose your gesture.  "))
+        # for gesture in self.gesture:
+            
+        #     if gesture == 0:
+        #         print(f"{self.player} has chosen Rock")
+        #         return "Rock"
+        #     elif gesture == 1:
+        #         print(f"{self.player} has chosen Paper")
+        #         return "Paper"
+        #     elif gesture == 2:
+        #         print(f"{self.player} has chosen Scissors")
+        #         return "Scissors"
+        #     elif gesture == 3:
+        #         print(f"{self.player} has chosen Lizard")
+        #         return "Lizard"
+        #     elif gesture == 4:
+        #         print(f"{self.player} has chosen Spock")
+        #         return "Spock"
+        #     else:
+        #         print("Please select a valid gesture")
